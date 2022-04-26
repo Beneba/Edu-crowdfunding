@@ -1,0 +1,61 @@
+.containerDetails {
+    background: #fff;
+    justify-content: center;
+    padding:50px 20px;
+
+}
+.holder {
+    width: 100%;
+}
+.title p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.educImage img {
+    border-radius: 10px;
+    width:100%
+}
+
+.actionBtn {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    
+    
+}
+.donate button{
+    width: 250% auto;
+    align-items: center;
+    justify-content: center;
+    color:#ffff;
+    
+}
+.share button{
+    width: 250% auto;
+    align-items: center;
+    justify-content: center;
+    color:rgba(50, 50, 243, 0.541);
+    background-color: #fff;
+}
+/* second column */
+.card {
+    padding: 20px 20px;
+    top:30px;
+    margin-right: 20px;
+}
+.btn {
+    margin: 5px
+}
+.donate_1 button{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    color:#ffff;
+    
+}
+.share_1 button{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    
+}
