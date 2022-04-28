@@ -7,32 +7,28 @@ import {
   Card,
   ProgressBar,
 } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import Header from "../component/Header";
 import Layout from "../component/Layout";
 import Groupstudy from "../img/Groupstudy.jpg";
+import DonatePage from "./DonatePage";
+
+
+
 
 function EduDetails() {
-  // const [post, setPost] =useState([
-  //  {
-  //     Schoolname: 'Holy Innocent',
-  //   supportType:"Support for Furniture",
-  //   image : "img src ={Groupstudy}",
-  //   description:  "My brother Scott Brower was killed in a tragic accident on March 20th. He was 42 years old and has left behind his wife. Mary Elizabeth, and his 21-month old daughter Anna.",
-  //   amount: "Ghc6000",
-  //   },
-  //   {
-  //     Schoolname: 'Holy Innocent',
-  //   supportType:"Support for Furniture",
-  //   image : "img src={Groupstudy}",
-  //   description:  "My brother Scott Brower was killed in a tragic accident on March 20th. He was 42 years old and has left behind his wife. Mary Elizabeth, and his 21-month old daughter Anna.",
-  //   amount: "Ghc6000",
-  //   },
-    
-  // ])
+  
+  let navigate = useNavigate();
+    const donatePage =()=>{
+      let path = `/DonatePage`;
+      navigate(path)
+    }
 
   return (
-    <Layout>
-      
-      <Container className="containerDetails">
+    <div>
+    <Header />
+      <div className="app">
+      <div className="containerDetails">
         <Row>
           <Col xs={12} md={8}>
             <div className="holder">
@@ -67,7 +63,7 @@ function EduDetails() {
               </div>
               <div className="actionBtn">
                 <div className="donate">
-                  <Button> DONATE</Button>
+                  <Button onClick={donatePage}> DONATE</Button>
                 </div>
                 <div className="share">
                   <Button> SHARE</Button>
@@ -82,12 +78,12 @@ function EduDetails() {
                   <strong>Ghc1357</strong> raised of Ghc6000 goal
                 </p>
                 <div className="progress">
-                  <ProgressBar now={60} />
+                  <ProgressBar now={60} active/>
                 </div>
               </div>
               <div className="btn">
                 <div className="donate_1">
-                  <Button> DONATE</Button>
+                  <Button onClick={donatePage} > DONATE</Button>
                 </div>
                 <div className="share_1">
                   <Button> SHARE</Button>
@@ -99,9 +95,12 @@ function EduDetails() {
             3 of 3
           </Col> */}
         </Row>
-      </Container>
-    </Layout>
+      </div>
+      </div>
+
+      </div>
+    
   );
 }
 
-export default EduDetails;
+export default EduDetails

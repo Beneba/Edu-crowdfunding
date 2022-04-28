@@ -1,0 +1,53 @@
+.container-donation {
+    margin-top: 50px;
+    display: block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    left:0;
+    right:0;
+}
+.button-options {
+    border: 10px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+button{
+    width: 150px;
+    padding: 15px;
+}
+
+.donate-btn {
+    width: 310px;
+}
+.input-option {
+    margin:10px;
+    width:310px;
+    height:100px;
+    border: 1px dashed ;
+    text-align: center;
+
+}
+/* .form-control{
+    justify-content: center;
+    align-items: center;
+    left:0;
+    display: block;
+    right:0;
+    
+
+} */
+.item {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    left:0;
+    right: 0;
+    margin: 0;
+}

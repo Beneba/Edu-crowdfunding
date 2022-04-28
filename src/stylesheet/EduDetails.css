@@ -1,14 +1,17 @@
 .containerDetails {
+    margin: auto;
     background: #fff;
     position: absolute;
     justify-content: center;
     padding:50px 20px;
     left:0;
     right:0;
+    width: 80%;
 
 }
 .holder {
     width: 100%;
+    margin: 15px;
 }
 .title p{
     font-size: 25px;

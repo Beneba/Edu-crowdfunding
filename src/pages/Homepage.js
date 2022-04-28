@@ -5,10 +5,16 @@ import { MdOutlineCastForEducation, MdOutlineSupport } from 'react-icons/md';
 import { FaHandsHelping } from "react-icons/fa";
 import EducationPost from "../component/EducationPost";
 
-import blackchild from "../img/black child.png";
+// import blackchild from "../img/black child.png";
 import Learning from "../img/Learning.png";
 import students from "../img/students.png";
 import kids from "../img/kids.png";
+import man1 from "../img/man1.png";
+import woman from "../img/woman.png";
+import man  from "../img/man 2.png";
+
+
+
 
 
 function Homepage() {
@@ -21,7 +27,7 @@ function Homepage() {
             <header className="header">
               <div className="container">
                 <div>
-                  <h1>Fundmy Education</h1>
+                  <h1>Support My Education</h1>
                   <p>
                     {" "}
                     Help others by donating to their fundraiser, or start one
@@ -51,11 +57,11 @@ function Homepage() {
             <header className="header">
               <div className="container">
                 <div>
-                  <h1>Fundmy Education</h1>
+                  <h1>Role to Develop Education</h1>
                   <p>
                     {" "}
-                    Help others by donating to their fundraiser, or start one
-                    for someone you care about.
+                    Developing though Education is the right path to National Development. We need you to be part 
+                    of the change makers
                   </p>
                 </div>
                 <img className="Image" src={Learning} alt="black child" />
@@ -109,13 +115,14 @@ function Homepage() {
         </section>
 
         <EducationPost />
-
+            
         <Carousel fade>
           <Carousel.Item>
+            
             <testimony className="testimony">
               <div className="container">
                 <div>
-                  <h2>FundEducation Stories</h2>
+                  <h2>Success Stories</h2>
                   <h6>
                     <strong>Meet Chris & Marry</strong>
                   </h6>
@@ -125,7 +132,7 @@ function Homepage() {
                     ones and to help us inspire the life of the young ones.
                   </p>
                 </div>
-                <img className="Image" src={students} alt="black child" />
+                <img className="Image" src={man1} alt="black child" />
               </div>
             </testimony>
           </Carousel.Item>
@@ -133,9 +140,9 @@ function Homepage() {
             <testimony className="testimony">
               <div className="container">
                 <div>
-                  <h2>FundEducation Stories</h2>
+                <h2>Success Stories</h2>
                   <h6>
-                    <strong>Meet Isaac & Elikem</strong>
+                    <strong>Meet Isaac </strong>
                   </h6>
 
                   <p>
@@ -144,7 +151,7 @@ function Homepage() {
                     for someone you care about.
                   </p>
                 </div>
-                <img className="Image" src={students} alt="black child" />
+                <img className="Image" src={man} alt="black child" />
               </div>
             </testimony>
           </Carousel.Item>
@@ -152,7 +159,7 @@ function Homepage() {
             <testimony className="testimony">
               <div className="container">
                 <div>
-                  <h2>Testimonies</h2>
+                <h2>Success Stories</h2>
                   <h6>
                     <strong>Meet Benjamin</strong>
                   </h6>
@@ -163,7 +170,7 @@ function Homepage() {
                     for someone you care about.
                   </p>
                 </div>
-                <img className="Image" src={students} alt="black child" />
+                <img className="Image" src={woman} alt="black child" />
               </div>
             </testimony>
           </Carousel.Item>
